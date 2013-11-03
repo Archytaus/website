@@ -1,0 +1,11 @@
+<% @posts.each do |post| %>
+<p>
+  <%= link_to post.title, post.id %>
+
+  <% if post.tldr %>
+  <blockquote>
+    <%= post.tldr %>
+  </blockquote>
+  <% end %>
+</p>
+<% end %>
