@@ -1,7 +1,7 @@
-<%= link_to 'index', root_path %>
+<div class="container">
+	<%=raw render file: @post.path %>
 
-<%=raw render file: @post.path %>
-
-<% if @post.date %>
-<p>Published on <%= @post.date.to_s(:long) %></p>
-<% end %>
+	<% if @post.date %>
+		<p>Published on <%= @post.date.to_s(:long) %></p>
+	<% end %>
+</div>

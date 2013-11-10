@@ -13,3 +13,28 @@
  */
 @import 'groundwork_settings';
 @import 'groundworkcss/groundwork';
+
+header {
+  border: 1px solid rgb(209, 209, 209);
+  border-width: 0 0 1px;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
+
+.logo {
+	font-family: Caracteres L1, Helvetica, Arial, sans-serif;
+	font-size: 24pt;
+	-webkit-font-smoothing: antialiased !important;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	color: #fff;
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+
+.logo a, .logo a:visited {
+	text-decoration: none;
+	color: #2B2B2D;
+}
+
+h1 {
+	font-family: museo-slab,Helvetica,Arial,Geneva,sans-serif;
+}

@@ -11,4 +11,5 @@ foo = 'foo' # a codeblock
 <!--meta
   date: 2013-10-21
   tldr: Awesome
+  background-image: override-bg.png 
 -->
