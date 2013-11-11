@@ -84,7 +84,8 @@ footer {
   }
 
   .glass {
-    background-color: rgba(82, 79, 79, 0.9);
+    @include filter-gradient(#524f4f, #524f4f, horizontal); // IE6-9
+    @include background-image(linear-gradient(left, rgba(82,79,79,0.9) 0%,rgba(82,79,79,0.9) 76%,rgba(82,79,79,0.47) 96%,rgba(82,79,79,0.12) 99%,rgba(82,79,79,0) 100%));
     color: white;
   }
 }
