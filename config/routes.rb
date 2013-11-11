@@ -1,4 +1,5 @@
 Website::Application.routes.draw do
-  root to: 'posts#index' # if you want an index page
-  get '/:id', to: 'posts#show'
+  get '/home', to: redirect('/')
+
+  root :to => 'high_voltage/pages#show', id: 'home'
 end
