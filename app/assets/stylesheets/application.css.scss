@@ -78,12 +78,34 @@ footer {
   }
 
   .post {
-    background-image: url('test_image.jpg');
     background-repeat: no-repeat;
     background-position: center;
+
+    height: 200px;
+  }
+
+  .first-post {
+    background-image: url('background-1.jpg');
+  }
+  .second-post {
+    background-image: url('background-2.jpg');
+  }
+  .third-post {
+    background-image: url('background-3.jpg');
+  }
+  .fourth-post {
+    background-image: url('background-4.jpg');
+  }
+  .fifth-post {
+    background-image: url('background-5.jpg');
+  }
+  .sixth-post {
+    background-image: url('background-6.jpg');
   }
 
   .glass {
+    height: 200px;
+    
     @include filter-gradient(#524f4f, #524f4f, horizontal); // IE6-9
     @include background-image(linear-gradient(left, rgba(82,79,79,0.9) 0%,rgba(82,79,79,0.9) 76%,rgba(82,79,79,0.47) 96%,rgba(82,79,79,0.12) 99%,rgba(82,79,79,0) 100%));
     color: white;
