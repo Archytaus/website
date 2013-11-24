@@ -155,6 +155,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   capistrano
+  capistrano-bundler
   capistrano-ext
   capistrano-rails
   capistrano-rvm (~> 0.1.0)
