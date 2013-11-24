@@ -79,6 +79,8 @@ footer {
 
   h2 {
     font-size: 32px;
+
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
   }
 
   .post {
@@ -86,6 +88,8 @@ footer {
     background-position: center;
 
     height: 200px;
+    border: 0;
+    box-shadow: black 0px 0px 4px;
   }
 
   .post-link {
