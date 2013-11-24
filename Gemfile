@@ -28,5 +28,11 @@ group :assets do
 
   gem 'autoprefixer-rails'
   gem 'compass-rails', github: 'groundworkcss/compass-rails', ref: '1749c06f15dc4b058427e7969810457213647fb8'
+end
 
+group :development do
+    gem 'capistrano'
+    gem 'capistrano-ext'
+    gem 'capistrano-rails'
+    gem 'capistrano-rvm', '~> 0.1.0'
 end
