@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <%= metamagic %>
+  <title><%= yield(:page_title) %></title>
   <%= stylesheet_link_tag    "application", media: "screen" %>
   <!--[if IE]>
     <link type="text/css" rel="stylesheet" href="/assets/groundworkcss/groundwork-ie.css">
@@ -10,6 +10,10 @@
   <%= csrf_meta_tags %>
   <%= favicon_link_tag %>
 
+  <meta name="author" content="Ryan Scott">
+  <meta name="keywords" content="Ryan Scott, Rails, Ruby, Ruby on Rails, JavaScript, Melbourne, Programming, Games, Games Programming, Web Programming, Web Development">
+  <meta name="description" content="Ryan Scott - I'm a software developer living in Melbourne Australia. I currently work with Ruby on Rails and JavaScript. In my spare time I love programming games and spending time with my girlfriend.">
+  
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 </head>
