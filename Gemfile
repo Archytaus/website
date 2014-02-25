@@ -21,6 +21,7 @@ gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+gem 'high_voltage', '~> 2.1.0'
 gem 'metamagic'
 
 group :assets do
