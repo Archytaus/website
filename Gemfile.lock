@@ -1,10 +1,14 @@
 GIT
-  remote: git://github.com/groundworkcss/compass-rails.git
-  revision: 1749c06f15dc4b058427e7969810457213647fb8
-  ref: 1749c06f15dc4b058427e7969810457213647fb8
+  remote: git://github.com/groundworkcss/groundworkcss-rails.git
+  revision: a9eeadc59c7f5288833fc4f768897ad562e94a2f
   specs:
-    compass-rails (1.0.3)
-      compass (>= 0.12.2, < 0.14)
+    groundworkcss (2.3.5)
+      autoprefixer-rails
+      coffee-rails (>= 3.2.1)
+      colorize
+      compass-rails (~> 1)
+      jquery-rails
+      sass-rails (>= 3.2.3)
 
 GEM
   remote: https://rubygems.org/
@@ -53,7 +57,7 @@ GEM
     capistrano-rvm (0.1.0)
       capistrano (~> 3.0)
       sshkit (~> 1.2.0)
-    chunky_png (1.2.9)
+    chunky_png (1.3.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -66,17 +70,11 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    compass-rails (1.1.3)
+      compass (>= 0.12.2)
     erubis (2.7.0)
     execjs (2.0.2)
     fssm (0.2.10)
-    groundworkcss (2.3.5)
-      autoprefixer-rails
-      coffee-rails (>= 3.2.1)
-      colorize
-      compass-rails (~> 1)
-      jquery-rails
-      sass-rails (>= 3.2.3)
-    high_voltage (2.0.0)
     hike (1.2.3)
     i18n (0.6.9)
     jquery-rails (3.0.4)
@@ -87,6 +85,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metamagic (2.0.6)
+      rails (>= 3.0.0)
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.4)
@@ -160,10 +160,10 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm (~> 0.1.0)
   coffee-rails (~> 4.0.0)
-  compass-rails!
-  groundworkcss
-  high_voltage
+  compass-rails
+  groundworkcss!
   jquery-rails
+  metamagic
   rails (= 4.0.3)
   sass-rails (~> 4.0.0)
   sqlite3

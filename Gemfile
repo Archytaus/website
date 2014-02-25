@@ -21,13 +21,13 @@ gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-gem 'high_voltage'
+gem 'metamagic'
 
 group :assets do
-  gem 'groundworkcss'
+  gem 'groundworkcss', github: 'groundworkcss/groundworkcss-rails'
 
   gem 'autoprefixer-rails'
-  gem 'compass-rails', github: 'groundworkcss/compass-rails', ref: '1749c06f15dc4b058427e7969810457213647fb8'
+  gem 'compass-rails'
 end
 
 group :development do
