@@ -26,6 +26,10 @@ gem 'high_voltage', '~> 2.1.0'
 # Dynamic generation of sitemap.xml
 gem 'dynamic_sitemaps'
 
+# Caching provided by the HTTP server
+gem 'actionpack-action_caching'
+gem 'actionpack-page_caching'
+
 group :assets do
   gem 'groundworkcss', github: 'groundworkcss/groundworkcss-rails'
 
