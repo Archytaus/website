@@ -1,5 +1,3 @@
-require 'capistrano-nginx-unicorn'
-
 set :application, 'website'
 set :repo_url, 'git@github.com:Archytaus/website.git'
 

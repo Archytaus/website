@@ -47,5 +47,5 @@ group :development do
     gem 'capistrano-ext'
     gem 'capistrano-rails'
     gem 'capistrano-rvm', '~> 0.1.0'
-    gem 'capistrano-nginx-unicorn', require: false
+    gem 'capistrano3-unicorn', require: false
 end
