@@ -1,3 +1,5 @@
+require 'capistrano-unicorn'
+
 set :application, 'website'
 set :repo_url, 'git@github.com:Archytaus/website.git'
 
@@ -12,10 +14,10 @@ set :rvm_ruby_version, '2.0.0-p247@website'
 # set :pty, true
 
 # set :linked_files, %w{config/database.yml}
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets}
 
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-# set :keep_releases, 5
+set :keep_releases, 5
 
 namespace :deploy do
 
@@ -26,6 +28,9 @@ namespace :deploy do
       # execute :touch, release_path.join('tmp/restart.txt')
     end
   end
+  after 'deploy:restart', 'unicorn:reload'    # app IS NOT preloaded
+  after 'deploy:restart', 'unicorn:restart'   # app preloaded
+  after 'deploy:restart', 'unicorn:duplicate' # before_fork hook implemented (zero downtime deployments)
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
