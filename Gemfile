@@ -22,7 +22,12 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 
 gem 'high_voltage', '~> 2.1.0'
+
+# Easier html meta tags
 gem 'metamagic'
+
+# Dynamic generation of sitemap.xml
+gem 'dynamic_sitemaps'
 
 group :assets do
   gem 'groundworkcss', github: 'groundworkcss/groundworkcss-rails'
